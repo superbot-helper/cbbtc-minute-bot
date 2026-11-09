@@ -18,8 +18,8 @@ const STOP_BPS = 30;
 const TARGET_BPS = 180;
 /** Give the reversion this many bars before giving up. */
 const MAX_HOLD_BARS = 120;
-/** The insurance trade: 25 USDC, so a calm window still records a filled order. */
-const INSURANCE_UNITS = 25_000_000n;
+/** The insurance trade: 10 USDC, so a calm window still records a filled order with little dead capital. */
+const INSURANCE_UNITS = 10_000_000n;
 /** Do not chase a bounce: a buy fills only within this of the close it was decided on. */
 const BUY_MAX_SLIP = 40;
 /** Accept up to 1% of downside on an exit, so a stop is not stuck. */
